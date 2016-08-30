@@ -1,0 +1,109 @@
+---
+layout: test
+---
+<div class="container-fluid banner">
+     <nav class="navbar navbar-simple navbar-fixed-top">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#"> &nbsp Alice Chen</a>
+       </div>
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+       <ul class="nav navbar-nav">
+         <li><a href="#about">Skills <span class="sr-only">(current)</span></a></li>
+         <li><a href="#work">Work</a></li>
+         <li><a href="#contact">About & Contact</a></li>
+       </ul>
+       </div>
+     </nav>
+     <div class="bannertext">
+       <h1>Collect the dots</h1>
+       <p>Accelerating | Responsive | Immense</p>
+     </div>
+   </div>
+
+   <div class="container-fluid section" id="skill">
+     <h1>Skills<i class="fa fa-user" aria-hidden="true"></i></h1>
+     <div class="col-md-6">
+       <h3>The Basic</h3>
+       <h4>HTML5<i class="fa fa-html5" aria-hidden="true"></i></h4>
+       <h4>CSS<i class="fa fa-css3" aria-hidden="true"></i></h4>
+       <h4>JavaScript</h4>
+     </div>
+     <div class="col-md-6">
+       <h3>To spice it up</h3>
+       <h4>jQuery</h4>
+       <h4>Bootstrap</h4>
+       <h4>Angular</h4>
+     </div>
+   </div>
+
+   <div class="container-fluid section" id="work">
+     <h1>Work<i class="fa fa-briefcase" aria-hidden="true"></i></h1>
+       <div class="col-md-4">
+         <h3>Web Design</h3>
+         <div class="box" id="template1">
+           <div class="boxcover">
+             <p><a href="http://www.pitacho.com/template/website-template-1.html">Website template</a></p>
+           </div>
+         </div>
+         <div class="box" id="template2">
+           <div class="boxcover">
+             <p><a href="http://www.pitacho.com/template/email-template-1.html">Email template: eCommerce</a></p>
+           </div>
+         </div>
+         <div class="box" id="template3">
+           <div class="boxcover">
+             <p><a href="http://www.pitacho.com/template/email-template-2.html">Email template: Newsletter</a></p>
+           </div>
+         </div>
+       </div>
+       <div class="col-md-4">
+         <h3>Web Development</h3>
+         <div class="box"><p>Coming Soon</p></div>
+         <div class="box"><p>Coming Soon</p></div>
+         <div class="box"><p>Coming Soon</p></div>
+       </div>
+       <div class="col-md-4">
+         <h3>Data Visualization</h3>
+         <div class="box"><p>Coming Soon</p></div>
+         <div class="box"><p>Coming Soon</p></div>
+         <div class="box"><p>Coming Soon</p></div>
+       </div>
+     </div>
+
+   <div class="container-fluid section" id="contact">
+       <h1>About & Contact<i class="fa fa-envelope" aria-hidden="true"></i></h1>
+       <p>A web designer & front-end developer who loves good food, coffee (no starbucks plz) & funny Youtube videos.</p>
+       <h4>For more....</h4>
+       <div class="social-media">
+         <a class="mBtn smGlobalBtn" href="mailto:alice_chan7410@hotmail.com"></a>
+         <a class="lkBtn smGlobalBtn" href="https://www.linkedin.com/in/tianhui-alice-chen-07867492"></a>
+         <a class="ghBtn smGlobalBtn" href="https://github.com/alicec7410"></a>
+       </div>
+   </div>
+
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

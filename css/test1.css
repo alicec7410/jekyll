@@ -1,0 +1,266 @@
+/*import google font*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+/*import social media icon font*/
+@import url('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css');
+
+* {
+    font-family: 'Open Sans', Arial, sans-serif;
+    word-spacing: 1.6px;
+    letter-spacing: 1px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+    background: #fff;
+}
+
+/*menu*/
+nav {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.navbar-simple a {
+    color: #fff;
+    font-size: 22px;
+    margin: auto 10px;
+    font-weight: bold;
+}
+.navbar-simple a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.open {
+    padding: 160px 0 0 0;
+    transition: 0.5s;
+}
+.navbar-toggle {
+    background: #fff;
+}
+.navbar-toggle:checked {
+  transition: 2s;
+}
+.navbar-toggle span{
+    background: black;
+}
+li a:visited{
+  transition: 2s;
+}
+
+/*banner: text area*/
+.banner {
+  background-image: url('https://static.pexels.com/photos/51021/pexels-photo-51021.jpeg');
+  width: 100%;
+  height:600px;
+  margin: 0;
+  padding: 0;
+  top:20px;
+  display: flex;
+  justify-content: center;
+}
+
+.bannertext {
+  width: 100%;
+align-self: center;
+}
+
+.bannertext h1{
+  color: #fff;
+  font-size: 70px;
+  letter-spacing: 7px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bannertext p {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.container-fluid {
+    padding: 0px;
+    margin: 0px;
+}
+/*social media icons*/
+.smGlobalBtn {
+  display: inline-block;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+    margin: 0 4px;
+}
+.mBtn {
+  background: #E74C3C;
+}
+.mBtn:before {
+  font-family: "FontAwesome";
+  content: "\f003";
+}
+.mBtn:hover {
+  color: #E74C3C;
+  background: #fff;
+}
+.ghBtn {
+  background: #767676;
+}
+.ghBtn:before {
+  font-family: "FontAwesome";
+  content: "\f09b";
+}
+.ghBtn:hover {
+  color: #767676;
+  background: #fff;
+}
+
+.lkBtn {
+  background: #0094BC;
+}
+
+.lkBtn:before {
+  font-family: "FontAwesome";
+  content: "\f0e1";
+}
+.lkBtn:hover {
+  color: #0094BC;
+  background: #fff;
+}
+
+/*sections*/
+.section {
+    text-align: center;
+    margin: 40px auto;
+    color: black;
+    padding: 20px 0;
+}
+.section i {
+  margin-left: 8px;
+}
+.section h1 {
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: bold;
+    word-spacing: 6px;
+    letter-spacing: 4px;
+    border-bottom: solid 1px #616A6B;
+    width: 28%;
+    margin: 0 auto;
+    background: black;
+    color: #fff;
+    height: 40px;
+}
+
+.section h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.section h4 {
+  font-size: 18px;
+}
+.col-md-4 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.col-md-4 .box {
+  width: 100%;
+  height: 200px;
+  background: black;
+  opacity: 0.8;
+  margin-top: 10px;
+  color: #fff;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+}
+.col-md-4 .box p {
+  align-self: center;
+}
+
+#template1 {
+  background-image: url('http://www.pitacho.com/images/biz1.png');
+  background-position: center;
+  background-size: 100%;
+}
+#template2 {
+  background-image: url('http://www.pitacho.com/images/email1.png');
+  background-position: center;
+  background-size: 100%;
+}
+#template3 {
+  background-image: url('http://www.pitacho.com/images/email2.png');
+  background-position: center;
+  background-size: 100%;
+}
+.boxcover {
+  background-color: black;
+  opacity: 0.8;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.box:hover .boxcover{
+  opacity: 0;
+  transition: 1s;
+}
+.boxcover p {
+  font-size: 14px;
+  align-self: center;
+}
+.boxcover p a{
+  text-decoration: none;
+  color: #fff;
+}
+#contact p {
+  margin: 30px 0;
+  font-size: 16px;
+}
+/*footer*/
+footer {
+    width: 100%;
+    height: 100px;
+}
+
+
+/*different devices*/
+    @media only screen and (max-width: 320px) {
+        /*text*/
+        .intro h1 {
+	font-size: 26px;
+            line-height: 30px;
+}
+        .intro h3 {
+	font-size: 16px;
+            line-height: 20px;
+}
+        .smGlobalBtn{
+             width: 30px;
+  height: 30px;
+            font-size: 15px;
+            margin: 0 2px;
+        }
+        .section h1 {
+            font-size: 24px;
+        }
+        .section h3{
+    font-size: 18px;
+            line-height: 26px;
+}
+    }
