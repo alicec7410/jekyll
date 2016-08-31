@@ -264,3 +264,9 @@ footer {
             line-height: 26px;
 }
     }
+.post {
+      padding-top: 100px;
+    }
+.post ul {
+  list-style-type: none;
+}
