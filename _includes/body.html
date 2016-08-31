@@ -16,7 +16,7 @@ layout: test
        <ul class="nav navbar-nav">
          <li><a href="#about">Skills <span class="sr-only">(current)</span></a></li>
          <li><a href="#work">Work</a></li>
-         <li><a href="#blog">Blog</a></li>
+         <li><a href="/blog/">Blog</a></li>
          <li><a href="#contact">About & Contact</a></li>
        </ul>
        </div>
@@ -87,24 +87,3 @@ layout: test
          <a class="ghBtn smGlobalBtn" href="https://github.com/alicec7410"></a>
        </div>
    </div>
-
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
