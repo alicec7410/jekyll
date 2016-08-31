@@ -1,44 +1,73 @@
 ---
-layout: test
+layout: default
+css: test1.css
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>PITACHO</title>
+<div class="container-fluid banner">
+     {% include nav.html %}
 
-    <!--Meta Data-->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <div class="bannertext">
+       <h1>Collect the dots</h1>
+       <p>Accelerating | Responsive | Immense</p>
+     </div>
+   </div>
 
-    <!--add a og: image later-->
-    <meta property="og:site_name" content="Pitacho"/>
-    <meta property="og:title" content="Pitacho"/>
-    <meta name="og:description" content="Pitacho is a portfolio website featuring Alice Chen's design work in website, data visualizaiton and other areas."/>
-    <meta property="og:url" content="http://www.pitacho.com/"/>
-    <meta property="og:type" content="website">
+   <div class="container-fluid section" id="skill">
+     <h1>Skills<i class="fa fa-user" aria-hidden="true"></i></h1>
+     <div class="col-md-6">
+       <h3>The Basic</h3>
+       <h4>HTML5<i class="fa fa-html5" aria-hidden="true"></i></h4>
+       <h4>CSS<i class="fa fa-css3" aria-hidden="true"></i></h4>
+       <h4>JavaScript</h4>
+     </div>
+     <div class="col-md-6">
+       <h3>To spice it up</h3>
+       <h4>jQuery</h4>
+       <h4>Bootstrap</h4>
+       <h4>Angular</h4>
+     </div>
+   </div>
 
+   <div class="container-fluid section" id="work">
+     <h1>Work<i class="fa fa-briefcase" aria-hidden="true"></i></h1>
+       <div class="col-md-4">
+         <h3>Web Design</h3>
+         <div class="box" id="template1">
+           <div class="boxcover">
+             <p><a href="http://www.pitacho.com/template/website-template-1.html">Website template</a></p>
+           </div>
+         </div>
+         <div class="box" id="template2">
+           <div class="boxcover">
+             <p><a href="http://www.pitacho.com/template/email-template-1.html">Email template: eCommerce</a></p>
+           </div>
+         </div>
+         <div class="box" id="template3">
+           <div class="boxcover">
+             <p><a href="http://www.pitacho.com/template/email-template-2.html">Email template: Newsletter</a></p>
+           </div>
+         </div>
+       </div>
+       <div class="col-md-4">
+         <h3>Web Development</h3>
+         <div class="box"><p>Coming Soon</p></div>
+         <div class="box"><p>Coming Soon</p></div>
+         <div class="box"><p>Coming Soon</p></div>
+       </div>
+       <div class="col-md-4">
+         <h3>Data Visualization</h3>
+         <div class="box"><p>Coming Soon</p></div>
+         <div class="box"><p>Coming Soon</p></div>
+         <div class="box"><p>Coming Soon</p></div>
+       </div>
+     </div>
 
-    <meta name="description" content="Pitacho is a portfolio website featuring Alice Chen's design work in website, data visualizaiton and other areas."/>
-    <meta name="keywords" content="web design,web designer,data visualization,design,web development"/>
-    <meta name="robots" content="index" />
-
-    <!--icon-->
-    <link rel="icon" type="image/png" href="../images/logo.png" />
-
-    <!--CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/test1.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-    <!--jQuery-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!--bootstrap jQuery-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-</head>
-<body>
-{% include body.html %}
-</body>
-</html>
+   <div class="container-fluid section" id="contact">
+       <h1>About & Contact<i class="fa fa-envelope" aria-hidden="true"></i></h1>
+       <p>A web designer & front-end developer who loves good food, coffee (no starbucks plz) & funny Youtube videos.</p>
+       <h4>For more....</h4>
+       <div class="social-media">
+         <a class="mBtn smGlobalBtn" href="mailto:alice_chan7410@hotmail.com"></a>
+         <a class="lkBtn smGlobalBtn" href="https://www.linkedin.com/in/tianhui-alice-chen-07867492"></a>
+         <a class="ghBtn smGlobalBtn" href="https://github.com/alicec7410"></a>
+       </div>
+     </div>

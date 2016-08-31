@@ -2,11 +2,10 @@
 layout: page
 title: Blog
 permalink: /blog/
+
 ---
-
-<p>Hello!</p>
-
-<div class="home">
+{% include post.css %}
+<div class="blog">
 
   <h1 class="page-heading">Posts</h1>
 
