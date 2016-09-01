@@ -5,7 +5,9 @@ css: ['test1.css']
 <div class="post container">
   <div class="row">
     <div class="col-md-8">
-      {{content}}
+<h1>{{ post.title }}</h1>
+<h4>{{ post.date | date: "%b %-d, %Y" }}</h4>
+    <h3>  {{content}}</h3>
     </div>
   </div>
 </div>
